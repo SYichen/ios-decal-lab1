@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A41F69911000B6CCAC /* ClassListViewController.swift */; };
+		14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */; };
 		4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4C21E4007D300612972 /* AppDelegate.swift */; };
 		4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4C41E4007D300612972 /* DefineVariableViewController.swift */; };
 		4183F4C81E4007D300612972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4183F4C61E4007D300612972 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14FC20A41F69911000B6CCAC /* ClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
+		14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		4183F4BF1E4007D300612972 /* XcodeTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4183F4C21E4007D300612972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4183F4C41E4007D300612972 /* DefineVariableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineVariableViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				4183F4C21E4007D300612972 /* AppDelegate.swift */,
 				4183F4C41E4007D300612972 /* DefineVariableViewController.swift */,
 				4183F4C61E4007D300612972 /* Main.storyboard */,
+				14FC20A41F69911000B6CCAC /* ClassListViewController.swift */,
+				14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */,
 				4183F55C1E41B24D00612972 /* FundsViewController.swift */,
 				4183F4D61E401BBC00612972 /* OptionalsViewController.swift */,
 				4183F4D41E40120C00612972 /* NiceWorkViewController.swift */,
@@ -174,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */,
+				14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */,
+				14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */,
 				4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */,
 				4183F55D1E41B24D00612972 /* FundsViewController.swift in Sources */,
 				4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */,
