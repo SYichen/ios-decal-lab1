@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FA09DC1F69C54F0072CD85 /* CalCentralServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */; };
+		14FA09DD1F69C54F0072CD85 /* CalCentralServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A41F69911000B6CCAC /* ClassListViewController.swift */; };
 		14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */; };
 		4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4C21E4007D300612972 /* AppDelegate.swift */; };
@@ -16,11 +18,25 @@
 		4183F4CD1E4007D300612972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4183F4CB1E4007D300612972 /* LaunchScreen.storyboard */; };
 		4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D41E40120C00612972 /* NiceWorkViewController.swift */; };
 		4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D61E401BBC00612972 /* OptionalsViewController.swift */; };
-		4183F55D1E41B24D00612972 /* FundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F55C1E41B24D00612972 /* FundsViewController.swift */; };
 		4183F5611E41B5AD00612972 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F5601E41B5AD00612972 /* constants.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		14FA09DE1F69C54F0072CD85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14FA09DD1F69C54F0072CD85 /* CalCentralServer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalCentralServer.framework; path = Frameworks/CalCentralServer.framework; sourceTree = "<group>"; };
 		14FC20A41F69911000B6CCAC /* ClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
 		14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		4183F4BF1E4007D300612972 /* XcodeTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +48,6 @@
 		4183F4CE1E4007D300612972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4183F4D41E40120C00612972 /* NiceWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceWorkViewController.swift; sourceTree = "<group>"; };
 		4183F4D61E401BBC00612972 /* OptionalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalsViewController.swift; sourceTree = "<group>"; };
-		4183F55C1E41B24D00612972 /* FundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundsViewController.swift; sourceTree = "<group>"; };
 		4183F5601E41B5AD00612972 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FA09DC1F69C54F0072CD85 /* CalCentralServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +66,7 @@
 		14FF18C31F68F0600037DA45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14FA09DB1F69C5050072CD85 /* CalCentralServer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,17 +91,10 @@
 		4183F4C11E4007D300612972 /* XcodeTour */ = {
 			isa = PBXGroup;
 			children = (
-				4183F4C21E4007D300612972 /* AppDelegate.swift */,
-				4183F4C41E4007D300612972 /* DefineVariableViewController.swift */,
 				4183F4C61E4007D300612972 /* Main.storyboard */,
-				14FC20A41F69911000B6CCAC /* ClassListViewController.swift */,
-				14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */,
-				4183F55C1E41B24D00612972 /* FundsViewController.swift */,
-				4183F4D61E401BBC00612972 /* OptionalsViewController.swift */,
-				4183F4D41E40120C00612972 /* NiceWorkViewController.swift */,
-				4183F4C91E4007D300612972 /* Assets.xcassets */,
-				4183F4CB1E4007D300612972 /* LaunchScreen.storyboard */,
-				4183F4CE1E4007D300612972 /* Info.plist */,
+				451949A11F69F86600D32988 /* q1 */,
+				451949A01F69F85A00D32988 /* q2 */,
+				451949A21F69F87000D32988 /* q3 */,
 				4183F55E1E41B59900612972 /* Utils */,
 			);
 			path = XcodeTour;
@@ -93,6 +103,10 @@
 		4183F55E1E41B59900612972 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4183F4C91E4007D300612972 /* Assets.xcassets */,
+				4183F4CB1E4007D300612972 /* LaunchScreen.storyboard */,
+				4183F4CE1E4007D300612972 /* Info.plist */,
+				4183F4C21E4007D300612972 /* AppDelegate.swift */,
 				4183F55F1E41B5A200612972 /* Constants */,
 			);
 			name = Utils;
@@ -106,6 +120,32 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		451949A01F69F85A00D32988 /* q2 */ = {
+			isa = PBXGroup;
+			children = (
+				4183F4D61E401BBC00612972 /* OptionalsViewController.swift */,
+			);
+			path = q2;
+			sourceTree = "<group>";
+		};
+		451949A11F69F86600D32988 /* q1 */ = {
+			isa = PBXGroup;
+			children = (
+				4183F4D41E40120C00612972 /* NiceWorkViewController.swift */,
+				4183F4C41E4007D300612972 /* DefineVariableViewController.swift */,
+			);
+			path = q1;
+			sourceTree = "<group>";
+		};
+		451949A21F69F87000D32988 /* q3 */ = {
+			isa = PBXGroup;
+			children = (
+				14FC20A41F69911000B6CCAC /* ClassListViewController.swift */,
+				14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */,
+			);
+			path = q3;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +156,7 @@
 				4183F4BB1E4007D300612972 /* Sources */,
 				4183F4BC1E4007D300612972 /* Frameworks */,
 				4183F4BD1E4007D300612972 /* Resources */,
+				14FA09DE1F69C54F0072CD85 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,7 +224,6 @@
 				14FC20A51F69911000B6CCAC /* ClassListViewController.swift in Sources */,
 				14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */,
 				4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */,
-				4183F55D1E41B24D00612972 /* FundsViewController.swift in Sources */,
 				4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */,
 				4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */,
 				4183F5611E41B5AD00612972 /* constants.swift in Sources */,
@@ -323,6 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = XcodeTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.XcodeTour;
@@ -335,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = XcodeTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.XcodeTour;
