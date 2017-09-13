@@ -53,7 +53,28 @@ class ClassListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetail", sender: nil)
+        let alertController = UIAlertController(title: "Instructor Consent Required", message: "This course requires a permission code to enroll. Please input it here:", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Submit", style: .default) { (_) in
+            guard let fieldText = alertController.textFields![0].text, let code = Int(fieldText) else {
+                fatalError("Invalid permission code")
+            }
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "showDetail", sender: code)
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        alertController.addTextField { (textField) in
+            textField.text = "274958"
+            textField.keyboardType = .numberPad
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 
     // MARK: - Navigation
@@ -61,7 +82,7 @@ class ClassListViewController: UIViewController, UITableViewDelegate, UITableVie
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let classDetailViewController = segue.destination as? ClassDetailViewController {
-            print(classDetailViewController)
+            classDetailViewController.permissionCode = sender as! Int
         }
     }
 
