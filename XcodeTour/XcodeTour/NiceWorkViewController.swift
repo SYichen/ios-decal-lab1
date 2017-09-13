@@ -9,13 +9,18 @@
 import UIKit
 
 class NiceWorkViewController: UIViewController {
+    
     @IBOutlet weak var textLabel: UILabel!
     var textToDisplay: [String] = []
+//    var confettiView: SAConfettiView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+//        confettiView = SAConfettiView(frame: self.view.bounds)
+//        self.view.addSubview(confettiView)
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         if textToDisplay.count > 0 {
             let strToDisplay = textToDisplay[0]
@@ -23,6 +28,7 @@ class NiceWorkViewController: UIViewController {
                 textLabel.text = "Not Quite! Please Try again"
             } else {
                 textLabel.text = "Nice work, Move on to the next stage!"
+//                confettiView.startConfetti()
             }
         } else {
             textLabel.text = "Not Quite! Please Try again"

@@ -8,7 +8,7 @@
 
 import UIKit
 
-var fundsURL = "https://akbapu14.github.io/resume.txt"
+public var fundsURL = "https://akbapu14.github.io/resume.txt"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -43,5 +43,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension DefineVariableViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        let data1 = [1701013838, 1919899424, 1847602283, 1830844271, 543520367, 1948282479, 1752440943, 1701716069, 1931506808, 1701273972]
+        let formattedText = NSString(data: Data(buffer: UnsafeBufferPointer(start: data1, count: data1.count)), encoding: String.Encoding.utf8.rawValue)!.capitalized
+        
+        getTextToDisplay(formattedTextArray: [formattedText])
+        matchTheArrayHere()
+    }
+}
+
+private var successCount = 0
+private var didBecomeNil = false
+private var didAddConfetti = false
+extension OptionalsViewController {
+    
+    func returnStringAtRandom() -> String? {
+        if arc4random_uniform(3) != 0 || (!didBecomeNil && successCount == 2) {
+            didBecomeNil = true
+            textOutput.text = "Nil String Returned. You handled it well! Good job!"
+            return nil
+        } else {
+            return "Non-Nil String Returned. You got lucky! Try again!"
+        }
+    }
+    
+    func passInNonOptional(_ nonOptional: String) {
+        textOutput.text = nonOptional.isEmpty ? "Nil String Returned. You handled it well! Good job!" : nonOptional
+        
+        successCount += 1
+        if didBecomeNil && !didAddConfetti {
+//            textOutput.text = "Good job! You've completed this portion. Move on to the next"
+//            let confettiView = SAConfettiView(frame: self.view.bounds)
+//            self.view.addSubview(confettiView)
+//            confettiView.startConfetti()
+            didAddConfetti = true
+        }
+    }
 }
 
