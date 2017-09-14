@@ -15,6 +15,7 @@ class BoringViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        boringLabel.textColor = UIColor.green
     }
     
     override func viewWillDisappear(_ animated: Bool) {
