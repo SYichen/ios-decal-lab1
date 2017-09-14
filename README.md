@@ -42,7 +42,7 @@ If you passed this stage, move on to the next part of the lab by moving the entr
 
 ## question 3: View Controller Lifecycle + Breakpoints ##
 ### question 3: part 1 ###
-Run the app, and tap the "click me..." button. If you open up **Main.storyboard**, you'll notice the first screen you viewed has the class type **BoringViewController.swift** (Identity Inspector > Custom Class > Class). If you tap on the view controller to the left, you'll see no class is set! Currently there is no ViewController.swift file for the view controller in Storyboard
+Run the app, and tap the "click me..." button. If you open up **Main.storyboard**, you'll notice the first screen you viewed has the class type **BoringViewController.swift** (Identity Inspector > Custom Class > Class). If you tap on the view controller to the left, you'll see no class is set! Currently there is no ViewController.swift file for the view controller in the Storyboard's attributes.
 
 Setting the class of Storyboard view controller's allows us to programmatically interact with the UI elements in Interface Builder. If you look at **BoringViewController.swift**, for example, we are able to change the textcolor of the label programmatically, since we've created an outlet.
 
@@ -52,9 +52,9 @@ Your task:
 - create an outlet from the label in q3b to **YourNewViewController.swift**'s. Then, in viewDidLoad, change the text to "i am a view controller with a class set 😊"
 
 ### question 3: part 2 ###
-Open **BoringViewController.swift**. You'll see a few override functions. These methods are called automattically at the appropriate times by iOS when view controller's are loaded, presented, and dismissed. 
+Open **BoringViewController.swift**. You'll see a few overriden functions. These methods are called automatically at the appropriate times by iOS when view controllers are loaded, presented, and dismissed. 
 
-To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of given override methods. Then, run your simulator, and note the order in which each method is called. Press the button to get to the q3b view - you'll see a couple more of these override methods will be called, too. We'll ask you about the ordering (and how you figured out the order) during check-off. 
+To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of the given overriden methods. Then, run your simulator, and note the order in which each method is called. Press the button to get to the q3b view - you'll see a couple more of these overriden methods will be called, too. We'll ask you about the ordering (and how you figured out the order) during check-off. 
 
 If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711 
 
@@ -62,4 +62,4 @@ If you can't remember what each breakpoint button does, check out this article h
 
 
 ## check-off ##
-once you've finished the lab, you ca
+Once you've finished the lab, you can check-off using this form https://goo.gl/forms/SC66Bcy3iPfGcup62. If you weren't able to finish before 8pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
