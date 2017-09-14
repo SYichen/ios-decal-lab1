@@ -52,8 +52,11 @@ Your task:
 - create an outlet from the label in q3b to **YourNewViewController.swift**'s. Then, in viewDidLoad, change the text to "i am a view controller with a class set 😊"
 
 ### question 3: part 2 ###
-TODO: lifecycle stuff
+Open **BoringViewController.swift**. You'll see a few override functions. These methods are called automattically at the appropriate times by iOS when view controller's are loaded, presented, and dismissed. 
 
+To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of given override methods. Then, run your simulator, and note the order in which each method is called. Press the button to get to the q3b view - you'll see a couple more of these override methods will be called, too. We'll ask you about the ordering (and how you figured out the order) during check-off. 
+
+If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711 
 
 ## question 4: Using the Debugger ##
 
