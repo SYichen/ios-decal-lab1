@@ -59,7 +59,9 @@ To figure out which order these methods are called, you _could_ read one of many
 If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711 
 
 ## question 4: Using the Debugger ##
+CalCentral is developing an iOS application for their beloved platform, but they've encountered a bug and need your help. For some reason, the course enrollment functionality isn't working when a permission code is required. Regardless of whether the permission code is valid or invalid, it always results in an error. 
 
+They managed to track the bug down to the method called `submitEnrollmentRequest` in **ClassDetailViewController.swift**. This method interfaces their server API (`CalCentralServer.post()`) for enrolling in a course with a permission code. Their server API expects an encoded dictionary of `String` values, ignoring any and all other types. The method `encodeParameters()` takes care of encoding a dictionary to a JSON object. They're sure that this method, `base64EncodedString()`, and the dictionary keys are correctly implemented, so we can ignore those. Given the pre-populated valid permission code `274958`, find and patch the bug in `submitEnrollmentRequest`.
 
 ## check-off ##
 Once you've finished the lab, you can check-off using this form https://goo.gl/forms/SC66Bcy3iPfGcup62. If you weren't able to finish before 8pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
