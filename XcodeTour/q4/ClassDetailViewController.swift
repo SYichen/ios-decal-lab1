@@ -34,9 +34,13 @@ class ClassDetailViewController: UIViewController {
         // Encode JSON data to base64 string
         let encodedString = jsonData.base64EncodedString()
         // Make network request
-        let (didFail, responseString) = CalCentralServer.post(encodedParameters: encodedString)
+        let (invalidRequest, responseString, errorMessage) = CalCentralServer.post(encodedParameters: encodedString)
         
-        if didFail {
+        guard errorMessage == nil else {
+            fatalError(errorMessage!)
+        }
+        
+        if invalidRequest {
             responseLabel.textColor = .red
         }
         responseLabel.text = responseString

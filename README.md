@@ -1,8 +1,4 @@
-# Lab 1 : XcodeTutorial App #
-
-
-## Due Date ##
-Tuesday, February 7th at 11:59 pm
+# Lab 1 : XcodeTutorial #
 
 ## General Overview ##
 Welcome to your first iOS DeCal Lab!
@@ -11,7 +7,8 @@ There are three problems you'll be solving in this lab.
 
 1. Defining Variables
 2. Working with Optionals
-3. Using the Debugger
+3. View Controller Lifecycle + Breakpoints
+4. Using the Debugger
 
 Each time you finish a problem, open the storyboard, drag the entry point to the next view controller representing the next problem. 
 
@@ -31,24 +28,35 @@ Once you've donwloaded the files onto your computer, open up the file **XcodeTou
 
 Before starting, it may be helpful to open the file **Main.storyboard** (found in your project navigator in Xcode) to see the layout of this lab before starting.
 
-## Problem 1: Defining Variables ##
+## question 1: Defining Variables ##
 If you open up **DefineVariableViewController.swift**, you'll notice that there are two "TODO" sections. The goal of this problem is to define a variable that can be used to transfer data between view controllers (different screens within an app). 
 
 In the `getTextToDisplay` method, there is a `formattedTextArray` variable. In the `prepareForSegue` method, there is a `textToDisplay` property of `destinationVC` currently set to an empty array. Your goal is to make these two ends meet by making the `textToDisplay` property equal the value stored in `formattedTextArray`.
 
 To see if you properly transferred the data, run your application. If you succeeded, move on to the next part of the lab by moving the entry point arrow (found in **Main.storyboard**) to the View Controller labeled "2".
 
-## Problem 2: Working with Optionals ##
+## question 2: Working with Optionals ##
 Run the app and read what's on the screen. When you press proceed, you'll see a button that says "Generate String". If you visit **OptionalsViewController.swift**, you'll see that there is a `returnStringAtRandom` function that returns a String? (Remember: ? means a variable can take on a nil value). If you click "Generate String" enough times, the app should crash. Look carefully at the code under the "TODO" and use your knowledge about optionals to find out why this is true.
 
 If you passed this stage, move on to the next part of the lab by moving the entry point arrow (found in **Main.storyboard**) to the View Controller labeled "3".
 
-## Problem 3: Using the Debugger ##
-In this problem, you have one goal and one goal only: Recover the public funds that Chancellor Dirks ruthlessly stole. First run the app and see what happens. Then follow the instructions in the code to figure out the current value of our school's funds (`amountLeft`) using the debugging skills taught in lecture and find the right constant using the search skills also taught in lecture. Add these together to get the appropriate value. If there are enough funds, you will have passed the lab!
+## question 3: View Controller Lifecycle + Breakpoints ##
+### question 3: part 1 ###
+Run the app, and tap the "click me..." button. If you open up **Main.storyboard**, you'll notice the first screen you viewed has the class type **BoringViewController.swift** (Identity Inspector > Custom Class > Class). If you tap on the view controller to the left, you'll see no class is set! Currently there is no ViewController.swift file for the view controller in Storyboard
 
-*Note - there's a network request in this view controller, so give the view some time to load.
+Setting the class of Storyboard view controller's allows us to programmatically interact with the UI elements in Interface Builder. If you look at **BoringViewController.swift**, for example, we are able to change the textcolor of the label programmatically, since we've created an outlet.
 
-## Grading ##
-You have the option to either be checked off by a TA or instructor during lab to receive your grade immediately **(recommended)**, or submit your files to [Gradescope](https://gradescope.com/courses/5482/assignments/17996/) to be graded later.
+Your task:
+- Create a Swift file (Cocoa Touch Class) for the View Controller labeled q3b in **Main.storyboard**. You may name it whatever you like (see the [lecture slides](http://iosdecal.com/Lectures/Lecture2.pdf#page=22) if you forgot how to do these steps!)
+- Set q3b's class to your view controller's class type
+- create an outlet from the label in q3b to **YourNewViewController.swift**'s. Then, in viewDidLoad, change the text to "i am a view controller with a class set 😊"
 
-If you are submitting via Gradescope, you will need to submit a zip folder of all of your project files (compress and submit the folder you cloned from GitHub).
+### question 3: part 2 ###
+TODO: lifecycle stuff
+
+
+## question 4: Using the Debugger ##
+
+
+## check-off ##
+once you've finished the lab, you ca
