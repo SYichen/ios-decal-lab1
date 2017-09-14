@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YGs-Ac-xtO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -294,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="137" y="1531"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="vr3-38-dwi">
             <objects>
-                <viewController id="ryY-aN-3Yo" sceneMemberID="viewController">
+                <viewController id="ryY-aN-3Yo" customClass="q3NewViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hEu-2k-Ow4"/>
                         <viewControllerLayoutGuide type="bottom" id="Quu-yy-hh3"/>
@@ -327,6 +327,9 @@
                             <constraint firstItem="bpe-Fz-oD2" firstAttribute="top" secondItem="hEu-2k-Ow4" secondAttribute="bottom" id="pln-EM-2TT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newOutlet" destination="0Tw-YY-D8Z" id="rvv-5s-MKm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lip-jr-3wI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3u-0C-f0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="134"/>
+            <point key="canvasLocation" x="1012" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
