@@ -52,11 +52,11 @@ Your task:
 - create an outlet from the label in q3b to **YourNewViewController.swift**'s. Then, in viewDidLoad, change the text to "i am a view controller with a class set 😊"
 
 ### question 3: part 2 ###
-Open **BoringViewController.swift**. You'll see a few overriden functions. These methods are called automatically at the appropriate times by iOS when view controllers are loaded, presented, and dismissed. 
+Open **BoringViewController.swift**. You'll see a few overriding functions. These methods are called automatically at the appropriate times by iOS when view controllers are loaded, presented, and dismissed. 
 
-To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of the given overriden methods. Then, run your simulator, and note the order in which each method is called. Press the button to get to the q3b view - you'll see a couple more of these overriden methods will be called, too. We'll ask you about the ordering (and how you figured out the order) during check-off. 
+To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of the given overriding methods. Then, run your simulator, and note the order in which each method is called. Press the button to get to the q3b view - you'll see a couple more of these overriding methods will be called, too. We'll ask you about the ordering (and how you figured out the order) during check-off. 
 
-If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711 
+If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711.
 
 ## question 4: Using the Debugger ##
 CalCentral is developing an iOS application for their beloved platform, but they've encountered a bug and need your help. For some reason, the course enrollment functionality isn't working when a permission code is required. Regardless of whether the permission code is valid or invalid, it always results in an error. 
