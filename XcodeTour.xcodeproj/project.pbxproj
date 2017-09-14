@@ -19,6 +19,7 @@
 		4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D41E40120C00612972 /* NiceWorkViewController.swift */; };
 		4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D61E401BBC00612972 /* OptionalsViewController.swift */; };
 		4183F5611E41B5AD00612972 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F5601E41B5AD00612972 /* constants.swift */; };
+		457C375A1F6A012500D85EC8 /* BoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C37591F6A012500D85EC8 /* BoringViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		4183F4D41E40120C00612972 /* NiceWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceWorkViewController.swift; sourceTree = "<group>"; };
 		4183F4D61E401BBC00612972 /* OptionalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalsViewController.swift; sourceTree = "<group>"; };
 		4183F5601E41B5AD00612972 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		457C37591F6A012500D85EC8 /* BoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 				4183F4C61E4007D300612972 /* Main.storyboard */,
 				451949A11F69F86600D32988 /* q1 */,
 				451949A01F69F85A00D32988 /* q2 */,
-				451949A21F69F87000D32988 /* q3 */,
+				457C37581F6A010D00D85EC8 /* q3 */,
+				451949A21F69F87000D32988 /* q4 */,
 				4183F55E1E41B59900612972 /* Utils */,
 			);
 			path = XcodeTour;
@@ -137,11 +140,19 @@
 			path = q1;
 			sourceTree = "<group>";
 		};
-		451949A21F69F87000D32988 /* q3 */ = {
+		451949A21F69F87000D32988 /* q4 */ = {
 			isa = PBXGroup;
 			children = (
 				14FC20A41F69911000B6CCAC /* ClassListViewController.swift */,
 				14FC20A61F69968300B6CCAC /* ClassDetailViewController.swift */,
+			);
+			path = q4;
+			sourceTree = "<group>";
+		};
+		457C37581F6A010D00D85EC8 /* q3 */ = {
+			isa = PBXGroup;
+			children = (
+				457C37591F6A012500D85EC8 /* BoringViewController.swift */,
 			);
 			path = q3;
 			sourceTree = "<group>";
@@ -225,6 +236,7 @@
 				14FC20A71F69968300B6CCAC /* ClassDetailViewController.swift in Sources */,
 				4183F4C51E4007D300612972 /* DefineVariableViewController.swift in Sources */,
 				4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */,
+				457C375A1F6A012500D85EC8 /* BoringViewController.swift in Sources */,
 				4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */,
 				4183F5611E41B5AD00612972 /* constants.swift in Sources */,
 			);
