@@ -28,7 +28,7 @@ class ClassDetailViewController: UIViewController {
 
     // MARK: - Server API
     
-    func submitEnrollmentRequest(withPermissionCode code: Int) {
+    func submitEnrollmentRequest(withPermissionCode code: Any) {
         // Serialize (encode) parameter dictionary into JSON data
         let jsonData = encodeParameters(dictionary: ["permission_code" : code, "user" : "Test McUser"])
         // Encode JSON data to base64 string
